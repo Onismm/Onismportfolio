@@ -1,8 +1,37 @@
 let sidebar = document.querySelector(".sidebar");
 let background = document.querySelector(".background")
 let closeBtn = document.querySelector("#btn");
+let closeBtn1 = document.querySelector("#btn1");
+let closeBtn2 = document.querySelector("#btn2");
+let closeBtn3 = document.querySelector("#btn3");
+let closeBtn4 = document.querySelector("#btn4");
+
 
 closeBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeBtn1.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeBtn2.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeBtn3.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeBtn4.addEventListener("click", () => {
   sidebar.classList.toggle("open");
   background.classList.toggle("open");
   console.log(sidebar)
