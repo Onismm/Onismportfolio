@@ -810,6 +810,7 @@ textarea:valid+label {
 
   .work .work-container .card {
     width: 600px;
+    margin-left:50px;
   }
 
   .work .work-container {
