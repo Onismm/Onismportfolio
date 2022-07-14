@@ -1,6 +1,6 @@
 let sidebar = document.querySelector(".sidebar");
 let background = document.querySelector(".background")
-let closeBtn = document.querySelectorAll(".btn-menu");
+let closeBtn = document.querySelector(".btn-menu");
 let closeMenu1 = document.querySelector("#close-menu1")
 let closeMenu2 = document.querySelector("#close-menu2")
 let closeMenu3 = document.querySelector("#close-menu3")
