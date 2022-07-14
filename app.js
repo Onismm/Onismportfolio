@@ -1,11 +1,10 @@
 let sidebar = document.querySelector(".sidebar");
 let background = document.querySelector(".background")
-let closeBtn = document.querySelector("#btn");
-let closeBtn1 = document.querySelector("#btn1");
-let closeBtn2 = document.querySelector("#btn2");
-let closeBtn3 = document.querySelector("#btn3");
-let closeBtn4 = document.querySelector("#btn4");
-
+let closeBtn = document.querySelectorAll(".btn-menu");
+let closeMenu1 = document.querySelector("#close-menu1")
+let closeMenu2 = document.querySelector("#close-menu2")
+let closeMenu3 = document.querySelector("#close-menu3")
+let closeMenu4 = document.querySelector("#close-menu4")
 
 closeBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
@@ -13,29 +12,7 @@ closeBtn.addEventListener("click", () => {
   console.log(sidebar)
 });
 
-closeBtn1.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  background.classList.toggle("open");
-  console.log(sidebar)
-});
 
-closeBtn2.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  background.classList.toggle("open");
-  console.log(sidebar)
-});
-
-closeBtn3.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  background.classList.toggle("open");
-  console.log(sidebar)
-});
-
-closeBtn4.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  background.classList.toggle("open");
-  console.log(sidebar)
-});
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
