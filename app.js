@@ -12,6 +12,30 @@ closeBtn.addEventListener("click", () => {
   console.log(sidebar)
 });
 
+closeMenu1.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeMenu2.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeMenu3.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
+closeMenu4.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  background.classList.toggle("open");
+  console.log(sidebar)
+});
+
 
 
 const typedTextSpan = document.querySelector(".typed-text");
