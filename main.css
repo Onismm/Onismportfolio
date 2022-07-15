@@ -1,3 +1,5 @@
+/* Declaring Color Palette */
+
 :root {
   --darker:#020D12;
   --dark:#051924;
@@ -10,6 +12,25 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+h2 {
+  font-family: 'Arimo', sans-serif;
+  color: #fff;
+  font-size: clamp(30px, 6vw, 60px);
+  letter-spacing: 2px;
+  text-align: center;
+  transform: scale(.95, 1);
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Header - NavBar */
 
 header {
   position: fixed;
@@ -84,8 +105,6 @@ header {
   color: #fff;
 }
 
-/* Effect 8: border slighter--lighter translate */
-
 nav {
   display: grid;
   grid-template-columns: 1tr;
@@ -114,6 +133,8 @@ nav a:focus {
   outline: none;
   transition: 0.2s;
 }
+
+/* Navbar Btn Animation Effect */
 
 .cl-effect-6 a {
   margin: 18px 10px;
@@ -160,6 +181,8 @@ nav a:focus {
 .cl-effect-6 a:hover {
   color: var(--lighter);
 }
+
+/* Header/Navbar Background Animation */
 
 @keyframes animate {
   0% {
@@ -268,6 +291,8 @@ nav a:focus {
   animation-delay: 2s;
 }
 
+/* Hero */
+
 #hero {
   z-index: -2;
   overflow: hidden;
@@ -324,13 +349,7 @@ nav a:focus {
   font-size: 32px;
 }
 
-p {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  color: #fff;
-  overflow: hidden;
-}
+
 #hero p span.typed-text {
   font-weight: bold;
   color: var(--light);
@@ -345,6 +364,9 @@ p {
 #hero p span.cursor.typing {
   animation: none;
 }
+
+/* Typewriter Animation */
+
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -363,6 +385,7 @@ p {
   }
 }
 
+/* About Section */
 
 .about {
   margin-left: 260px;
@@ -392,7 +415,8 @@ p {
 .about-content p {
   color: black;
   font-size: 1.2rem;
-  margin-left: 42px;
+  text-align: center;
+  margin-right: 55px;
 }
 
 .wrapper {
@@ -400,9 +424,18 @@ p {
   overflow: hidden;
 }
 
-.wrapper img {
-  width: 320px;
-  margin-left: 42px;
+.wrapper .content-box{
+  background-image: url('media/profile-2.png');
+  background-position: center;
+  background-size: cover;
+  width: 520px;
+  border: 3px solid var(--medium);
+}
+
+.wrapper .content-box .inner-box{
+  background-color: #051924a1;
+  width: 100%;
+  padding: 12px 4px 10px 0px;
 }
 
 .about-content ul {
@@ -414,6 +447,7 @@ p {
   font-size: 1.2rem;
   letter-spacing: 1.2;
   font-weight: bold;
+  color: var(--light);
 }
 
 .about-content li i {
@@ -460,6 +494,8 @@ p {
   float: right;
 }
 
+/* Work */
+
 .work {
   margin-left: 250px;
   margin-top: 25px;
@@ -504,8 +540,6 @@ p {
 main{
   max-width: 960px;
   margin: 30 20px;
-
-  
 }
 
 .card {
@@ -583,28 +617,15 @@ main{
   padding: 8% 5% 10% 5%;
 }
 
-
 .contact-links {
   background-color: var(--medium);
-  background: var(--darker);
-    
+  background: var(--darker); 
   border-radius: 10px 0 0 10px;
 }
 
 .contact-form-wrapper {
   background-color: var(--medium);
   border-radius: 0 10px 10px 0;
-}
-
-
-
-h2 {
-  font-family: 'Arimo', sans-serif;
-  color: #fff;
-  font-size: clamp(30px, 6vw, 60px);
-  letter-spacing: 2px;
-  text-align: center;
-  transform: scale(.95, 1);
 }
 
 .links {
@@ -628,6 +649,7 @@ h2 {
   height: 36px;
   transition: 0.3s;
 }
+
 .links a:hover {
   background: var(--lighter);
   color: #fff;
@@ -637,9 +659,6 @@ h2 {
 #contact img {
   width: 45px;
   height: 45px;
-  filter: 
-    hue-rotate(220deg)
-    drop-shadow(2px 4px 4px #0006);
   transition: 0.2s;
   user-select: none;
 }
@@ -650,10 +669,6 @@ h2 {
 
 #contact img:active {
   transform: scale(1.1, 1.1);
-  filter: 
-    hue-rotate(220deg)
-    drop-shadow(2px 4px 4px #222)
-    sepia(0.3);
 }
 
 .form-item {
@@ -749,18 +764,8 @@ textarea:valid+label {
     margin-left: 15px;
   }
 
-  .work #title:after {
-    margin-left: 35px;
-  }
-  
-  .work{
-    margin-left: 15px;
-  }
-
   .about-content .skills {
-
     grid-template-columns: 1fr 1fr;
-
   }
   
   .about-content .skills .box {
@@ -769,14 +774,20 @@ textarea:valid+label {
     width: 90%;
     margin: 0 20px 0 20px;
     padding: 15px;
+  }
 
+  .work #title:after {
+    margin-left: 35px;
+  }
+  
+  .work{
+    margin-left: 15px;
   }
 
   #contact{
     width: 100%;
     margin-left: 0px;
   }
-
 }
 
 @media only screen and (max-width: 819px) {
@@ -795,26 +806,6 @@ textarea:valid+label {
     padding: 0;
   }
 
-  #list1{
-    grid-area: list1;
-  }
-  #list2{
-    grid-area: list2;
-  }
-
-  .about img{
-    width: 150px;
-    height: 150px;
-    grid-area: img;
-    justify-self: center;
-  }
-
-  .wrapper{
-    display: grid;
-    grid-template-areas:
-    "img img"
-    "list1 list2";
-  }
 
   .about h1{
     font-size: 40px;
@@ -823,6 +814,27 @@ textarea:valid+label {
 
   .about h1:after{
     margin-left: 0px;
+  }
+
+  .about p{
+    margin-left: 38px;
+  }
+
+  .about-content li {
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 1rem;
+    letter-spacing: 1;
+    font-weight: bold;
+  }
+  
+  .about-content li i {
+    color: var(--lighter);
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px var(--medium);
+  }
+
+  .about-content span {
+    font-weight: 300;
   }
 
   .work #title{
@@ -835,36 +847,6 @@ textarea:valid+label {
     width: 50px;
   }
 
-  .about p{
-    margin-left: 38px;
-  }
-
-
-  .about .wrapper img{
-    padding: 0;
-    width: 250px;
-    height: 250px;
-  }
-
-  .about-content li {
-    margin-left: 6px;
-    margin-top: 10px;
-    font-size: 1rem;
-    letter-spacing: 1;
-    font-weight: bold;
-
-  }
-  
-  .about-content li i {
-
-    color: var(--lighter);
-    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px var(--medium);
-  }
-
-  .about-content span {
-    font-weight: 300;
-  }
-  
   #contact{
     margin-left: 0px;
     width: 100%;
@@ -881,10 +863,7 @@ textarea:valid+label {
   .contact-form-wrapper {
     border-radius: 0 0 10px 10px;
   }
-  h2 {
-    font-size: clamp(40px, 10vw, 60px);
-  }
-  
+
   .work .info{
     margin: 0px;
     padding: 10px 15px;
@@ -895,7 +874,6 @@ textarea:valid+label {
     height: auto;
     margin-top: 250px;
     margin-left: 0px;
-
   }
 
   .inner p{
@@ -922,19 +900,36 @@ textarea:valid+label {
 }
 
 @media only screen and (max-width:620px){
-  .wrapper{
-    display: grid;
-    grid-template-areas: "img"
-    "list1"
-    "list2";
-  }
 
   .about .skills{
     grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px){
+  .wrapper .content-box{
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+
+  .about-content p{
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .wrapper .content-box{
+    width: 350px;
+    height: 350px;
+  }
+
+  .content-box .inner-box{
+    display: grid;
+    height: 100%;
+  }
+
   .contact-box {
     width: 95%;
     margin: 8% 5%;
